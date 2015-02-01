@@ -21,13 +21,15 @@
 				
 			<h3 class="content-head"># Overview</h3>
 	
-			<p class="content-text">- Awesome Label is a jQuery library creates animated form labels like google material design, instead of using the placeholder attribute.</p>
+			<p class="content-text box">Awesome Label is a jQuery library creates animated form labels like google material design, instead of using the placeholder attribute.</p>
 
-			<p class="content-text">- Awesome label created and based on jQuery.</p>
+			<p class="content-text box">Awesome label created and based on jQuery.</p>
+
+			<p class="content-text box">Awesome label working on all textboxes/textareas.</p>
 
 			<h3 class="content-head"># Installation</h3>
 
-			<p class="content-text">1- Browse the /libs directory</p>
+			<p class="content-text">1- Browse the <strong>/libs</strong> directory</p>
 			<p class="content-text">2- Copy <span class="cfb">awesomelabel.min.js</span> to your project directory.</p>
 			<p class="content-text">3- Include the latest <span class="cfb">jquery.min.js</span> to your project file.</p>
 			<p class="content-text">4- Include the <span class="cfb">awesomelabel.min.js</span> to your project file under the jquery.</p>
@@ -43,7 +45,7 @@
 	$('.awesomelabel').awesomelabel();
 });</textarea>
 
-			<div id="clean">
+			<div id="example">
 
 				<h3># Results :</h3>
 
@@ -51,9 +53,9 @@
 				<input type="password" class="awesomelabel" data-label="Enter your password..">
 				<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
 
-			</div> <!-- End Clean -->
+			</div> <!-- End Example -->
 
-			<div id="params">
+			<div id="example">
 
 				<h3># Adding Arguments</h3>
 
@@ -75,7 +77,19 @@
 				<input type="password" class="awesomelabel-params" data-label="Enter your password..">
 				<textarea class="awesomelabel-params" data-label="Enter your message content.."></textarea>
 
-			</div> <!-- End Params -->
+			</div> <!-- End Example -->
+
+			<div id="example">
+
+				<h3># Adding some normal css to the <span class="coral">input-group</span> class :</h3>
+
+				<h3># Results :</h3>
+
+				<input type="text" class="awesomelabel" data-label="Enter your username..">
+				<input type="password" class="awesomelabel" data-label="Enter your password..">
+				<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
+
+			</div> <!-- End Example -->
 
 		</div> <!-- End Content -->
 
@@ -85,6 +99,7 @@
 <script src="demo/js/codemirror.js"></script>
 <script src="demo/js/javascript.js"></script>
 <script src="demo/js/xml.js"></script>
+<script src="demo/js/css.js"></script>
 <script src="libs/awesomelabel.min.js"></script>
 
 <script>
@@ -118,7 +133,7 @@
 			theme: 'ambiance'
 		});
 
-		javascript.setSize("50%", "100px");
+		javascript.setSize("50%", "70px");
 
 		var javascript_params = CodeMirror.fromTextArea(document.getElementById("javascript-code-params"), {
 			readOnly: true,
@@ -128,6 +143,15 @@
 		});
 
 		javascript_params.setSize("50%", "150px");
+
+		var css = CodeMirror.fromTextArea(document.getElementById("css-code"), {
+			readOnly: true,
+			lineNumbers: false,
+			mode:'css',
+			theme: 'ambiance'
+		});
+
+		css.setSize("50%", "150px");
 
 	});
 

@@ -49,8 +49,7 @@ h3 {
 	font-size:18px;
 }
 
-#clean,
-#params {
+#example {
 	margin:20px 0;
 	float:left;
 	clear:both;
@@ -64,4 +63,35 @@ h3 {
 .coral {
 	color:lightcoral;
 	font-style:italic;
+}
+
+.box {
+	padding:10px;
+	background-color:#eee;
+	color:gray;
+	border-left:4px solid lightgray;
+	font-style:italic;
+}
+
+.awesomelabel {
+	outline:none;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid cornflowerblue;
+	color:gray;
+}
+
+.awesomelabel:focus {
+ 	border-color:lightgray;
+}
+
+.awesomelabel:focus ~ label {
+	color:cornflowerblue;
+}
+
+.awesomelabel-input-group label {
+	font-family:georgia;
+	font-size:14px;
+	font-style:italic;
+	color:#bbb;
 }
