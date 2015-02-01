@@ -10,5 +10,31 @@
 	<input type="password" class="awesomelabel" data-label="Enter your password..">
 	<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
 
+	<input type="text" class="awesomelabel-params" data-label="Enter your username..">
+	<input type="password" class="awesomelabel-params" data-label="Enter your password..">
+	<textarea class="awesomelabel-params" data-label="Enter your message content.."></textarea>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/awesomelabel.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+		
+		$('.awesomelabel').awesomelabel();
+
+		$('.awesomelabel-params').awesomelabel({
+			margin: '20px',
+			padding: '20px',
+			width: '250px',
+			height: '30px',
+			float: 'left',
+			ease: '0.2'
+		});
+
+	});
+
+</script>
+
 </body>
 </html>
