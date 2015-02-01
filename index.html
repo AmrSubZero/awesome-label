@@ -17,83 +17,144 @@
 
 		<hr class="hr">
 
-		<div id="content">
+		<div id="section">
 				
-			<h3 class="content-head"># Overview</h3>
+			<h3 class="section-head"># Overview</h3>
 	
-			<p class="content-text box">Awesome Label is a jQuery library creates animated form labels like google material design, instead of using the placeholder attribute.</p>
+			<p class="section-text box">Awesome Label is a jQuery library creates animated form labels like google material design, instead of using the placeholder attribute.</p>
 
-			<p class="content-text box">Awesome label created and based on jQuery.</p>
+			<p class="section-text box">Awesome label created and based on jQuery.</p>
 
-			<p class="content-text box">Awesome label working on all textboxes/textareas.</p>
+			<p class="section-text box">Awesome label working on all textboxes/textareas.</p>
 
-			<h3 class="content-head"># Installation</h3>
+		</div> <!-- End section -->
 
-			<p class="content-text">1- Browse the <strong>/libs</strong> directory</p>
-			<p class="content-text">2- Copy <span class="cfb">awesomelabel.min.js</span> to your project directory.</p>
-			<p class="content-text">3- Include the latest <span class="cfb">jquery.min.js</span> to your project file.</p>
-			<p class="content-text">4- Include the <span class="cfb">awesomelabel.min.js</span> to your project file under the jquery.</p>
+		<hr class="hr">
 
-			<h3 class="content-head"># Getting Started</h3>
+		<div id="section">
+	
+			<h3 class="section-head"># Installation</h3>
 
-			<p class="content-text">1- Create a textbox, for e.g text input.</p>
-			<p class="content-text">2- Give it a class, for e.g <span class="coral">awesomelabel</span></p>
-			<p class="content-text">3- Add <span class="coral">data-label</span> attribute, it's the label text, for e.g <span class="cfb">Enter username..</span></p>
+			<p class="section-text">1- Browse the <strong>/libs</strong> directory</p>
+			<p class="section-text">2- Copy <span class="cfb">awesomelabel.min.js</span> to your project directory.</p>
+			<p class="section-text">3- Include the latest <span class="cfb">jquery.min.js</span> to your project file.</p>
+			<p class="section-text">4- Include the <span class="cfb">awesomelabel.min.js</span> to your project file under the jquery.</p>
+
+		</div> <!-- End section -->
+
+		<hr class="hr">
+
+		<div id="section">
+
+			<h3 class="section-head"># Getting Started</h3>
+
+			<p class="section-text">1- Create a textbox, for e.g text input.</p>
+			<p class="section-text">2- Give it a class, for e.g <span class="coral">awesomelabel</span></p>
+			<p class="section-text">3- Add <span class="coral">data-label</span> attribute, it's the label text, for e.g <span class="cfb">Enter username..</span></p>
 			<textarea id="html-code"><input type="text" class="awesomelabel" data-label="Enter your username.." /></textarea>
-			<p class="content-text">4- Now you need to run the plugin to this text input :</p>
+			<p class="section-text">4- Now you need to run the plugin to this text input :</p>
 			<textarea id="javascript-code">$(document).ready(function(){
 	$('.awesomelabel').awesomelabel();
 });</textarea>
 
-			<div id="example">
+		</div> <!-- End section -->
 
-				<h3># Results :</h3>
+		<hr class="hr">
 
-				<input type="text" class="awesomelabel" data-label="Enter your username..">
-				<input type="password" class="awesomelabel" data-label="Enter your password..">
-				<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
+		<div id="section">
 
-			</div> <!-- End Example -->
+			<h3># Results :</h3>
 
-			<div id="example">
+			<input type="text" class="awesomelabel" data-label="Enter your username..">
+			<input type="password" class="awesomelabel" data-label="Enter your password..">
+			<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
 
-				<h3># Adding Arguments</h3>
+		</div> <!-- End section -->
 
-				<p class="content-text">- You can specify some arguments to the text input for e.g</p>
-				<p class="content-text" style="font-size:12px;">( <span class="coral">Margin</span> - <span class="coral">Padding</span> - <span class="coral">Width</span> - <span class="coral">Height</span> - <span class="coral">Float</span> - <span class="coral">Ease</span> )</p>
+		<hr class="hr">
 
-				<textarea id="javascript-code-params">$('.awesomelabel-params').awesomelabel({
-	margin: '20px',
-	padding: '20px',
-	width: '250px',
-	height: '30px',
-	float: 'left',
-	ease: '0.2' // This means 2 milliseconds
+		<div id="section">
+
+			<h3># Adding Arguments</h3>
+
+			<p class="section-text">- You can specify some arguments to the text input for e.g</p>
+			<p class="section-text" style="font-size:12px;">( <span class="coral">Margin</span> - <span class="coral">Padding</span> - <span class="coral">Width</span> - <span class="coral">Height</span> - <span class="coral">Float</span> - <span class="coral">Ease</span> )</p>
+
+			<textarea id="javascript-code-params">$('.awesomelabel-params').awesomelabel({
+margin: '20px',
+padding: '20px',
+width: '250px',
+height: '30px',
+float: 'left',
+ease: '0.2' // This means 2 milliseconds
 });</textarea>
 
-				<h3># Results :</h3>
+		</div> <!-- End section -->
 
-				<input type="text" class="awesomelabel-params" data-label="Enter your username..">
-				<input type="password" class="awesomelabel-params" data-label="Enter your password..">
-				<textarea class="awesomelabel-params" data-label="Enter your message content.."></textarea>
+		<hr class="hr">
 
-			</div> <!-- End Example -->
+		<div id="section">
 
-			<div id="example">
+			<h3># Results :</h3>
 
-				<h3># Adding some normal css to the <span class="coral">input-group</span> class :</h3>
+			<input type="text" class="awesomelabel-params" data-label="Enter your username..">
+			<input type="password" class="awesomelabel-params" data-label="Enter your password..">
+			<textarea class="awesomelabel-params" data-label="Enter your message content.."></textarea>
 
-				<h3># Results :</h3>
+		</div> <!-- End section -->
 
-				<input type="text" class="awesomelabel" data-label="Enter your username..">
-				<input type="password" class="awesomelabel" data-label="Enter your password..">
-				<textarea class="awesomelabel" data-label="Enter your message content.."></textarea>
+		<hr class="hr">
 
-			</div> <!-- End Example -->
+		<div id="section">
 
-		</div> <!-- End Content -->
+			<h3># Adding some normal CSS :</h3>
 
-	</div>
+			<textarea id="css-code">.awesomelabel {
+	outline:none;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid cornflowerblue;
+	color:gray;
+}
+
+.awesomelabel:focus {
+	border-color:lightgray;
+}
+
+.awesomelabel:focus ~ label {
+	color:cornflowerblue;
+}
+
+.awesomelabel-input-group label {
+	font-family:georgia;
+	font-size:14px;
+	font-style:italic;
+	color:#bbb;
+}</textarea>
+
+		</div> <!-- End section -->
+
+		<hr class="hr">
+
+		<div id="section">
+
+			<h3># Results :</h3>
+
+			<input type="text" class="awesomelabel-params-css" data-label="Enter your username..">
+			<input type="password" class="awesomelabel-params-css" data-label="Enter your password..">
+			<textarea class="awesomelabel-params-css" data-label="Enter your message section.."></textarea>
+
+		</div> <!-- End section -->
+
+		<hr class="hr">
+
+		<div id="section">
+
+			<h3 class="section-head"># Zobry</h3>
+
+		</div> <!-- End Section -->
+
+	</div> <!-- End Wrapper -->
 
 <script src="demo/js/jquery.min.js"></script>
 <script src="demo/js/codemirror.js"></script>
@@ -114,6 +175,14 @@
 			width: '250px',
 			height: '30px',
 			float: 'left',
+			ease: '0.2'
+		});
+
+		$('.awesomelabel-params-css').awesomelabel({
+			margin: '20px',
+			padding: '20px',
+			width: '250px',
+			height: '50px',
 			ease: '0.2'
 		});
 
@@ -151,7 +220,7 @@
 			theme: 'ambiance'
 		});
 
-		css.setSize("50%", "150px");
+		css.setSize("100%", "360px");
 
 	});
 

@@ -28,31 +28,30 @@ body {
 	border-bottom:1px solid lightgray;
 }
 
-#content {
-	margin:0 auto;
+p,
+h3 {
+	margin:20px 0;
+}
+
+#section {
+	margin:20px auto;
 	padding:0;
 	width:80%;
 	overflow:hidden;
 }
 
-.content-head {
+.section-head {
 	font-size:18px;
 	color:#333;
 }
 
-.content-text {
+.section-text {
 	font-size:14px;
 	color:#666;
 }
 
 h3 {
 	font-size:18px;
-}
-
-#example {
-	margin:20px 0;
-	float:left;
-	clear:both;
 }
 
 .cfb {
@@ -73,7 +72,7 @@ h3 {
 	font-style:italic;
 }
 
-.awesomelabel {
+.awesomelabel-params-css {
 	outline:none;
 	background:transparent;
 	border:none;
@@ -81,17 +80,17 @@ h3 {
 	color:gray;
 }
 
-.awesomelabel:focus {
+.awesomelabel-params-css:focus {
  	border-color:lightgray;
 }
 
-.awesomelabel:focus ~ label {
+.awesomelabel-params-css:focus ~ label {
 	color:cornflowerblue;
 }
 
-.awesomelabel-input-group label {
+.awesomelabel-params-css-input-group label {
 	font-family:georgia;
-	font-size:14px;
+	font-size:1.2em;
 	font-style:italic;
 	color:#bbb;
 }
