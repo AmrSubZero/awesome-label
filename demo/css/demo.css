@@ -33,8 +33,9 @@ h3 {
 	margin:20px 0;
 }
 
-#section {
-	margin:20px auto;
+#section,
+#footer {
+	margin:0 auto;
 	padding:0;
 	width:80%;
 	overflow:hidden;
@@ -93,4 +94,13 @@ h3 {
 	font-size:1.2em;
 	font-style:italic;
 	color:#bbb;
+}
+
+#footer {
+	text-align:center;
+	color:#333;
+}
+
+#footer a {
+	color:cornflowerblue;
 }

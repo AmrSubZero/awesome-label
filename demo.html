@@ -32,6 +32,19 @@
 		<hr class="hr">
 
 		<div id="section">
+
+			<h3 class="section-head"># Browser Support</h3>
+
+			<p class="section-text">- Webkit Browsers (Chrome/Safari/etc)</p>
+			<p class="section-text">- Mozilla Firefox</p>
+			<p class="section-text">- Opera Browser</p>
+			<p class="section-text">- Internet Explorer</p>
+
+		</div> <!-- End Section -->
+
+		<hr class="hr">
+
+		<div id="section">
 	
 			<h3 class="section-head"># Installation</h3>
 
@@ -53,9 +66,11 @@
 			<p class="section-text">3- Add <span class="coral">data-label</span> attribute, it's the label text, for e.g <span class="cfb">Enter username..</span></p>
 			<textarea id="html-code"><input type="text" class="awesomelabel" data-label="Enter your username.." /></textarea>
 			<p class="section-text">4- Now you need to run the plugin to this text input :</p>
+			
 			<textarea id="javascript-code">$(document).ready(function(){
 	$('.awesomelabel').awesomelabel();
 });</textarea>
+			<p class="section-text">5- Then you're good to go.</p>
 
 		</div> <!-- End section -->
 
@@ -81,13 +96,14 @@
 			<p class="section-text" style="font-size:12px;">( <span class="coral">Margin</span> - <span class="coral">Padding</span> - <span class="coral">Width</span> - <span class="coral">Height</span> - <span class="coral">Float</span> - <span class="coral">Ease</span> )</p>
 
 			<textarea id="javascript-code-params">$('.awesomelabel-params').awesomelabel({
-margin: '20px',
-padding: '20px',
-width: '250px',
-height: '30px',
-float: 'left',
-ease: '0.2' // This means 2 milliseconds
+	margin: '20px',
+	padding: '20px',
+	width: '250px',
+	height: '30px',
+	float: 'left',
+	ease: '0.2' // This means 2 milliseconds
 });</textarea>
+		<p class="section-text"><strong>Note :</strong> the <span class="coral">ease</span> argument is the transition interval, you can set it by seconds or milliseconds.</p>
 
 		</div> <!-- End section -->
 
@@ -132,6 +148,10 @@ ease: '0.2' // This means 2 milliseconds
 	color:#bbb;
 }</textarea>
 
+			<p class="section-text"><strong>Note :</strong> by default the plugin is wrapping the textbox with div and the class of this div is going to be started with your specified class of the textbox and next to it <span class="cfb">-input-group</span> for e.g if you gave the textbox a class called awesomelabel the wrapper div class of it will be <span class="coral">awesomelabel-input-group</span>.</p>
+
+			<p class="section-text">And if you want to treat with the input for e.g you want to float/margin/etc it or you want to change the label font/color/etc you will need to treat with the wrapping div <span class="coral">inputClass</span><span class="cfb">-input-group</span>, you can make things alot easier if you can play around with browser inspect element.</p>
+
 		</div> <!-- End section -->
 
 		<hr class="hr">
@@ -148,11 +168,9 @@ ease: '0.2' // This means 2 milliseconds
 
 		<hr class="hr">
 
-		<div id="section">
-
-			<h3 class="section-head"># Zobry</h3>
-
-		</div> <!-- End Section -->
+		<div id="footer">
+			<p>Copyrights Reserved © <a href="http://fb.com/amrsubzero">Amr SubZero</a></p>
+		</div>
 
 	</div> <!-- End Wrapper -->
 
@@ -193,7 +211,7 @@ ease: '0.2' // This means 2 milliseconds
 			theme: 'ambiance'
 		});
 
-		xml.setSize("70%", "50px");
+		xml.setSize("100%", "auto");
 
 		var javascript = CodeMirror.fromTextArea(document.getElementById("javascript-code"), {
 			readOnly: true,
@@ -202,7 +220,7 @@ ease: '0.2' // This means 2 milliseconds
 			theme: 'ambiance'
 		});
 
-		javascript.setSize("50%", "70px");
+		javascript.setSize("100%", "auto");
 
 		var javascript_params = CodeMirror.fromTextArea(document.getElementById("javascript-code-params"), {
 			readOnly: true,
@@ -211,7 +229,7 @@ ease: '0.2' // This means 2 milliseconds
 			theme: 'ambiance'
 		});
 
-		javascript_params.setSize("50%", "150px");
+		javascript_params.setSize("100%", "auto");
 
 		var css = CodeMirror.fromTextArea(document.getElementById("css-code"), {
 			readOnly: true,
@@ -220,7 +238,7 @@ ease: '0.2' // This means 2 milliseconds
 			theme: 'ambiance'
 		});
 
-		css.setSize("100%", "360px");
+		css.setSize("100%", "auto");
 
 	});
 
