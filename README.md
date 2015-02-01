@@ -99,6 +99,6 @@
 		color:#bbb;
 	}
 
-> ***Note : *** by default the plugin is wrapping the textbox with div and the class of this div is going to be started with your specified class of the textbox and next to it ***-input-group*** for e.g if you gave the textbox a class called ***awesomelabel*** the wrapper div class of it will be ***awesomelabel-input-group***.
+> ***Note :*** by default the plugin is wrapping the textbox with div and the class of this div is going to be started with your specified class of the textbox and next to it ***-input-group*** for e.g if you gave the textbox a class called ***awesomelabel*** the wrapper div class of it will be ***awesomelabel-input-group***.
 
 > And if you want to treat with the input for e.g you want to **float/margin/etc** it or you want to change the label **font/color/etc** you will need to treat with the wrapping div ***inputClass-input-group***, you can make things alot easier if you can play around with browser inspect element.
