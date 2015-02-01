@@ -1,0 +1,53 @@
+body {
+	margin:0 auto;
+	background:#f1f1f1;
+	font-family:arial,tahoma,helvetica;
+	font-size:12px;
+}
+
+#wrap {
+	margin:0 auto;
+	padding:0;
+	width:960px;
+	height:auto;
+	overflow:hidden;
+	background:white;
+	border:1px solid #ccc;
+}
+
+.head {
+	font-size:32px;
+	text-align:center;
+	color:#333;
+}
+
+.hr {
+	width:80%;
+	border:none;
+	border-bottom:1px solid lightgray;
+}
+
+#content {
+	margin:0 auto;
+	padding:0;
+	width:80%;
+	overflow:hidden;
+}
+
+.content-head {
+	font-size:18px;
+	color:#333;
+}
+
+.content-text {
+	font-size:14px;
+	color:#666;
+}
+
+.code {
+
+}
+
+#clean h3:first-child {
+	font-size:18px;
+}
