@@ -12,7 +12,8 @@ body {
 	height:auto;
 	overflow:hidden;
 	background:white;
-	border:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 }
 
 .head {
@@ -44,10 +45,23 @@ body {
 	color:#666;
 }
 
-.code {
-
+h3 {
+	font-size:18px;
 }
 
-#clean h3:first-child {
-	font-size:18px;
+#clean,
+#params {
+	margin:20px 0;
+	float:left;
+	clear:both;
+}
+
+.cfb {
+	color:cornflowerblue;
+	font-style:italic;
+}
+
+.coral {
+	color:lightcoral;
+	font-style:italic;
 }

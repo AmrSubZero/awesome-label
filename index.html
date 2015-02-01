@@ -23,27 +23,29 @@
 	
 			<p class="content-text">- Awesome Label is a jQuery library creates animated form labels like google material design, instead of using the placeholder attribute.</p>
 
-			<p class="content-text">- Awesome label created and based on jQuery</p>
+			<p class="content-text">- Awesome label created and based on jQuery.</p>
 
 			<h3 class="content-head"># Installation</h3>
 
 			<p class="content-text">1- Browse the /libs directory</p>
-			<p class="content-text">2- Copy awesomelabel.js to your project directory, copy .min file if you want to develop.</p>
-			<p class="content-text">3- Include the latest jquery.min.js to your project file.</p>
-			<p class="content-text">4- Include the awesomelabel.min.js to your project file under the jquery.</p>
+			<p class="content-text">2- Copy <span class="cfb">awesomelabel.min.js</span> to your project directory.</p>
+			<p class="content-text">3- Include the latest <span class="cfb">jquery.min.js</span> to your project file.</p>
+			<p class="content-text">4- Include the <span class="cfb">awesomelabel.min.js</span> to your project file under the jquery.</p>
 
 			<h3 class="content-head"># Getting Started</h3>
 
 			<p class="content-text">1- Create a textbox, for e.g text input.</p>
-			<p class="content-text">2- Give it a class, for e.g awesomelabel</p>
-			<p class="content-text">3- Now you need to run the plugin to this text input :</p>
-			<textarea id="code">$(document).ready(function(){
+			<p class="content-text">2- Give it a class, for e.g <span class="coral">awesomelabel</span></p>
+			<p class="content-text">3- Add <span class="coral">data-label</span> attribute, it's the label text, for e.g <span class="cfb">Enter username..</span></p>
+			<textarea id="html-code"><input type="text" class="awesomelabel" data-label="Enter your username.." /></textarea>
+			<p class="content-text">4- Now you need to run the plugin to this text input :</p>
+			<textarea id="javascript-code">$(document).ready(function(){
 	$('.awesomelabel').awesomelabel();
 });</textarea>
 
 			<div id="clean">
 
-				<h3>Clean Form label without arguments (width/height/etc.)</h3>
+				<h3># Results :</h3>
 
 				<input type="text" class="awesomelabel" data-label="Enter your username..">
 				<input type="password" class="awesomelabel" data-label="Enter your password..">
@@ -52,6 +54,22 @@
 			</div> <!-- End Clean -->
 
 			<div id="params">
+
+				<h3># Adding Arguments</h3>
+
+				<p class="content-text">- You can specify some arguments to the text input for e.g</p>
+				<p class="content-text" style="font-size:12px;">( <span class="coral">Margin</span> - <span class="coral">Padding</span> - <span class="coral">Width</span> - <span class="coral">Height</span> - <span class="coral">Float</span> - <span class="coral">Ease</span> )</p>
+
+				<textarea id="javascript-code-params">$('.awesomelabel-params').awesomelabel({
+	margin: '20px',
+	padding: '20px',
+	width: '250px',
+	height: '30px',
+	float: 'left',
+	ease: '0.2' // This means 2 milliseconds
+});</textarea>
+
+				<h3># Results :</h3>
 
 				<input type="text" class="awesomelabel-params" data-label="Enter your username..">
 				<input type="password" class="awesomelabel-params" data-label="Enter your password..">
@@ -84,15 +102,32 @@
 			ease: '0.2'
 		});
 
-		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-			lineNumbers: true,
-			styleActiveLine: true,
-			matchBrackets: true,
+		var xml = CodeMirror.fromTextArea(document.getElementById("html-code"), {
+			readOnly: true,
+			lineNumbers: false,
+			mode:'xml',
+			theme: 'ambiance'
+		});
+
+		xml.setSize("70%", "50px");
+
+		var javascript = CodeMirror.fromTextArea(document.getElementById("javascript-code"), {
+			readOnly: true,
+			lineNumbers: false,
 			mode:'javascript',
 			theme: 'ambiance'
 		});
 
-		editor.setSize("50%", "100px");
+		javascript.setSize("50%", "100px");
+
+		var javascript_params = CodeMirror.fromTextArea(document.getElementById("javascript-code-params"), {
+			readOnly: true,
+			lineNumbers: false,
+			mode:'javascript',
+			theme: 'ambiance'
+		});
+
+		javascript_params.setSize("50%", "150px");
 
 	});
 
