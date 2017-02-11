@@ -69,7 +69,7 @@
    		width: '250px',
    		height: '30px',
    		float: 'left',
-   		ease: '0.2' // This means 2 milliseconds
+   		ease: '0.2' // This means 200 milliseconds
     });
 
 ---
